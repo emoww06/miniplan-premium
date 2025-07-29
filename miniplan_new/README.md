@@ -194,3 +194,4 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 ---
 
 **MiniPlan Premium** - Hedeflerinizi takip edin, başarıya ulaşın! 🎯 
+<!-- Son güncelleme -->
