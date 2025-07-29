@@ -54,8 +54,6 @@ self.addEventListener('activate', event => {
 self.addEventListener('push', event => {
   const options = {
     body: event.data ? event.data.text() : 'MiniPlan hatırlatıcı!',
-    icon: '/icons/icon-192x192.png',
-    badge: '/icons/icon-192x192.png',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
@@ -64,13 +62,11 @@ self.addEventListener('push', event => {
     actions: [
       {
         action: 'explore',
-        title: 'Aç',
-        icon: '/icons/icon-192x192.png'
+        title: 'Aç'
       },
       {
         action: 'close',
-        title: 'Kapat',
-        icon: '/icons/icon-192x192.png'
+        title: 'Kapat'
       }
     ]
   };
@@ -89,4 +85,4 @@ self.addEventListener('notificationclick', event => {
       clients.openWindow('/')
     );
   }
-}); 
+});
